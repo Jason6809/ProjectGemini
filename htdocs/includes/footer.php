@@ -1,4 +1,4 @@
-<?php echo "<script type='text/javascript' src='http://localhost:8000/includes/js/script.js'></script>"; ?>
+<?php echo "<script type='text/javascript' src='http://" . $_SERVER['HTTP_HOST'] . "/includes/js/script.js'></script>"; ?>
 <!-- <script type="text/javascript" src="../includes/js/script.js"></script> -->
 
 <div class="footer">
