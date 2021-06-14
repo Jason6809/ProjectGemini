@@ -12,7 +12,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "news";
 $page_title = "Edit News - ADMIN";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <?php
@@ -162,5 +162,5 @@ require ("includes/edit_news.php");
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

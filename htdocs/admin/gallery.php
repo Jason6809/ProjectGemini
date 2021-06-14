@@ -11,7 +11,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "gallery";
 $page_title = "Edit Gallery - ADMIN";
 require ('../connect_db.php');
-include ('includes/header.html');
+include ('includes/header.php');
 ?>
 
 <?php
@@ -172,5 +172,5 @@ require ('includes/edit_gallery.php');
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

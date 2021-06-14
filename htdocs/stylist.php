@@ -2,7 +2,7 @@
 $page_name = "stylist";
 $page_title = "Stylist - GEMINI";
 require ("connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <style type="text/css">
@@ -63,5 +63,5 @@ include ("includes/header.html");
 </div>
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

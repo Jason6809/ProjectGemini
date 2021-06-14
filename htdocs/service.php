@@ -2,7 +2,7 @@
 $page_name = "service";
 $page_title = "Service - GEMINI";
 require ('connect_db.php');
-include 'includes/header.html';
+include 'includes/header.php';
 ?>
 
 <div class="parallax" style="background-image: url('includes/img/parallax4.jpg'); padding-top: 7em; " id="service_list">
@@ -72,5 +72,5 @@ include 'includes/header.html';
 
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

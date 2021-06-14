@@ -17,7 +17,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "stylist";
 $page_title = "Edit Stylist - ADMIN";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <?php
@@ -282,5 +282,5 @@ require ("includes/edit_stylist.php");
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

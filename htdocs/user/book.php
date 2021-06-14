@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "book";
 $page_title = "Book - GEMINI";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <?php
@@ -628,5 +628,5 @@ if (mysqli_num_rows($getBooking) == 0) {
 
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

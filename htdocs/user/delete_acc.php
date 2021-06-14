@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "delete_acc";
 $page_title = "Delete Account - GEMINI";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <?php
@@ -124,5 +124,5 @@ if (isset($_GET["delete"])) {
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

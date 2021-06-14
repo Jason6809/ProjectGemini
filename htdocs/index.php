@@ -2,7 +2,7 @@
 $page_name = "home";
 $page_title = "Home - GEMINI";
 require ('connect_db.php');
-include ('includes/header.html');
+include ('includes/header.php');
 ?>
 
 
@@ -428,5 +428,5 @@ include ('includes/header.html');
 
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

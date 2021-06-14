@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "t_transaction";
 $page_title = "Today Transaction - GEMINI";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <style type="text/css">
@@ -133,5 +133,5 @@ include ("includes/header.html");
 
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

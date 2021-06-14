@@ -2,7 +2,7 @@
 $page_name = "useraccess";
 $page_title = "Sign Up and Login - GEMINI";
 require ('connect_db.php');
-include ('includes/header.html');
+include ('includes/header.php');
 ?>
 
 <?php
@@ -199,5 +199,5 @@ if (isset($_POST["login"])) {
 </div>
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

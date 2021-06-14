@@ -2,7 +2,7 @@
 $page_name = "location";
 $page_title = "Location - GEMINI";
 require ("connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 <style type="text/css">
 	#location {
@@ -56,5 +56,5 @@ include ("includes/header.html");
 
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

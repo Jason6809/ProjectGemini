@@ -14,7 +14,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "location";
 $page_title = "Edit Location - ADMIN";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 
@@ -168,5 +168,5 @@ require ('includes/edit_location.php');
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

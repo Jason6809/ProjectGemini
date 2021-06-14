@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "shop";
 $page_title = "Shop - ADMIN";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <?php
@@ -425,5 +425,5 @@ require ("includes/edit_product.php");
 
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

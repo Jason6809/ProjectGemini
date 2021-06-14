@@ -11,7 +11,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "book";
 $page_title = "Booking - Stylist";
 require ('../connect_db.php');
-include ('includes/header.html');
+include ('includes/header.php');
 ?>
 
 <?php
@@ -241,5 +241,5 @@ if (isset($_POST["submit"])) {
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

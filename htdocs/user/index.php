@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "shop";
 $page_title = "Shop - GEMINI";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 
@@ -242,6 +242,6 @@ if (isset($_POST["addToCart"])) {
 
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>
 

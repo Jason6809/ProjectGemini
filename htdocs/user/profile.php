@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "profile";
 $page_title = "My Profile - GEMINI";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <div class="parallax" style="background-color: lightgray;">
@@ -146,5 +146,5 @@ include ("includes/header.html");
 
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

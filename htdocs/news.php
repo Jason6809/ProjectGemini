@@ -3,7 +3,7 @@ $page_name = "news";
 $page_title = "News - GEMINI";
 
 require ("connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 
@@ -46,5 +46,5 @@ include ("includes/header.html");
 
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

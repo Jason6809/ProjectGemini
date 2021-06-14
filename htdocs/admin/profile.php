@@ -9,7 +9,7 @@ if (!isset($_SESSION["userID"])) {
 $page_name = "profile";
 $page_title = "Edit Profile - ADMIN";
 require ("../connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 <?php
@@ -126,5 +126,5 @@ if (isset($_POST["update"])) {
 </div>
 
 <?php
-include ("../includes/footer.html");
+include ("../includes/footer.php");
 ?>

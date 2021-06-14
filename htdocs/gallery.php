@@ -3,7 +3,7 @@ $page_name = "gallery";
 $page_title = "Gallery - GEMINI";
 
 require ("connect_db.php");
-include ("includes/header.html");
+include ("includes/header.php");
 ?>
 
 
@@ -84,5 +84,5 @@ include ("includes/header.html");
 
 
 <?php
-include ("includes/footer.html");
+include ("includes/footer.php");
 ?>

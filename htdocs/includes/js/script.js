@@ -1,10 +1,10 @@
 /*navbar shrink*/
 window.addEventListener("scroll", shrink_Navbar, false);
 var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-function shrink_Navbar() { 
-	var st = window.pageYOffset || document.documentElement.scrollTop; 
+function shrink_Navbar() {
+	var st = window.pageYOffset || document.documentElement.scrollTop;
 
-	if (st > lastScrollTop){
+	if (st > lastScrollTop) {
 		document.getElementById("navbar").classList.add("hide");
 		document.getElementById("subnav").classList.add("small");
 	} else {
@@ -74,8 +74,10 @@ function openModal(id) {
 
 var closeBtn = document.getElementById("closeBtn");
 
-closeBtn.onclick = function() {
-	modal.style.display = "none";
+if (closeBtn) {
+	closeBtn.onclick = function () {
+		modal.style.display = "none";
+	}
 }
 
 
@@ -88,7 +90,7 @@ var contentIndex = 1;
 showContent(contentIndex);
 
 function changeContent(index) {
-	showContent(contentIndex += index);	
+	showContent(contentIndex += index);
 }
 
 function currentContent(index) {
@@ -96,27 +98,31 @@ function currentContent(index) {
 }
 
 function showContent(index) {
-	var content = document.getElementById("content").getElementsByClassName("card");
-	var indicator = document.getElementById("indicator").getElementsByClassName("indicator");
-	
+	try {
+		var content = document.getElementById("content").getElementsByClassName("card");
+		var indicator = document.getElementById("indicator").getElementsByClassName("indicator");
 
-	if (index > content.length) {
-		contentIndex = 1;
-	}
-	if (index < 1) {
-		contentIndex = content.length;
-	}
 
-	for (var i = 0; i < content.length; i++) {
-		content[i].className = content[i].className.replace(" active", "");
-	}
+		if (index > content.length) {
+			contentIndex = 1;
+		}
+		if (index < 1) {
+			contentIndex = content.length;
+		}
 
-	for (var i = 0; i < indicator.length; i++) {
-		indicator[i].className = indicator[i].className.replace(" active", "");
-	}
+		for (var i = 0; i < content.length; i++) {
+			content[i].className = content[i].className.replace(" active", "");
+		}
 
-	content[contentIndex - 1].className += " active";
-	indicator[contentIndex - 1].className += " active";
+		for (var i = 0; i < indicator.length; i++) {
+			indicator[i].className = indicator[i].className.replace(" active", "");
+		}
+
+		content[contentIndex - 1].className += " active";
+		indicator[contentIndex - 1].className += " active";
+	} catch (error) {
+		console.warn(error);
+	}
 }
 
 
